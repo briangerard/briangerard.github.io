@@ -161,10 +161,10 @@ meant to give you a couple of starting points.
 
 These are some other overview-type pages that go into more depth than the "quick start"
 approach we took here:
-* [https://codeburst.io/understanding-python-installation-and-virtualenv-a-friendly-guide-for-beginners-and-2b82859b06ae](Overview)
-  from Deepak Aggarwal at [https://codeburst.io](codeburst.io)
-* [https://www.bogotobogo.com/python/python_virtualenv_virtualenvwrapper.php](Another one)
-  from the folks at [https://www.bogotobogo.com/index.php](bogotobogo.com)
-* And then there's the [https://virtualenvwrapper.readthedocs.io/en/latest/](official virtualenvwrapper docs),
-  from [https://readthedocs.org/](readthedocs.org)
+* [Overview](https://codeburst.io/understanding-python-installation-and-virtualenv-a-friendly-guide-for-beginners-and-2b82859b06ae)
+  from Deepak Aggarwal at [codeburst.io](https://codeburst.io)
+* [Another one](https://www.bogotobogo.com/python/python_virtualenv_virtualenvwrapper.php)
+  from the folks at [bogotobogo.com](https://www.bogotobogo.com/index.php)
+* And then there's the [official virtualenvwrapper docs](https://virtualenvwrapper.readthedocs.io/en/latest/),
+  from [readthedocs.org](https://readthedocs.org/)
 
