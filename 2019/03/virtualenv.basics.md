@@ -40,6 +40,32 @@ bash$ pip install virtualenvwrapper
 The most basic tasks needed to use virtual environments are creation, activation, and
 deactivation.  Obviously, you can do more, but this is the essential start.
 
+### Before You Start
+
+If you use bash, you will want to add the following to your `~/.bashrc` file:
+
+```bash
+VENVWRAPPER_LIB=$(type -P virtualenvwrapper.sh)
+if [[ (-n $VENVWRAPPER_LIB) && (-r $VENVWRAPPER_LIB) ]]
+then
+    . $VENVWRAPPER_LIB
+fi
+```
+
+Once that's been added, you can re-read it into your current shell by running:
+
+```bash
+bash$ . ~/.bashrc
+```
+
+Or by just restarting the shell:
+
+```bash
+bash$ exec bash
+```
+
+Once that's been done, the rest of the commands mentioned below become available.
+
 ### Creation
 
 First, while it's not required that each virtual environment have its own directory, I
@@ -127,3 +153,18 @@ bash$ deactivate
 bash$ currentvirtualenv
 Not in a virtualenv
 ```
+
+### Further Reading
+
+There are a number of resources for learning to use virtual environments.  This list is
+meant to give you a couple of starting points.
+
+These are some other overview-type pages that go into more depth than the "quick start"
+approach we took here:
+* [https://codeburst.io/understanding-python-installation-and-virtualenv-a-friendly-guide-for-beginners-and-2b82859b06ae](Overview)
+  from Deepak Aggarwal at [https://codeburst.io](codeburst.io)
+* [https://www.bogotobogo.com/python/python_virtualenv_virtualenvwrapper.php](Another one)
+  from the folks at [https://www.bogotobogo.com/index.php](bogotobogo.com)
+* And then there's the [https://virtualenvwrapper.readthedocs.io/en/latest/](official virtualenvwrapper docs),
+  from [https://readthedocs.org/](readthedocs.org)
+
