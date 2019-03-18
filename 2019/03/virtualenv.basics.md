@@ -55,6 +55,10 @@ bash$ mkdir my-project
 bash$ mkvirtualenv -a $HOME/my-project -p $(which python3) my-project
 ```
 
+Note that this will also activate the 'my-project' virtual environment.  So, after you've
+run that command, you are *in* the 'my-project' virtual environment.  See the
+'Deactivation' section below if you want to get back out of it.
+
 ### Activation
 
 In order to start working in a pre-existing virtual environment, you just need to use the
@@ -91,4 +95,35 @@ defined:
 ```bash
 bash$ deactivate
 bash: deactivate: command not found
+```
+
+### Bonus: Showing the Current Virtual Environment
+
+There's no built-in function for telling you if you're currently in a virtual environment,
+and if so, which one.  Luckily, this is easy enough to hack around.
+
+If you use bash, add this to the end of your `~/.bashrc` file:
+
+```bash
+alias currentvirtualenv='if [[ -n $VIRTUAL_ENV ]]; then basename $VIRTUAL_ENV; else echo
+"Not in a virtualenv"; fi'
+```
+
+That will provide a `currenvirtualenv` command whenever you log in from then on.
+
+In order to get it in the same shell where you edited the `.bashrc`, you can just source
+the file:
+
+```bash
+bash$ . ~/.bashrc
+```
+
+After that, you can use it from the command line:
+
+```bash
+bash$ currentvirtualenv
+my-project
+bash$ deactivate
+bash$ currentvirtualenv
+Not in a virtualenv
 ```
