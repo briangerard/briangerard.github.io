@@ -5,8 +5,8 @@ languages.  Reading books and tutorials helps, but honestly, there is simply no 
 for practice.  Writing and running code, and *especially* screwing it up and fixing it,
 gets me up to speed in a new language more quickly than any amount of reading alone.
 
-Here are some sites I've found useful, along with Python and Perl [Koans][1].  Enjoy, and
-let me know if you have any questions!
+Here are some sites I've found useful, along with Python and Perl [Koans][#footnotes].
+Enjoy, and let me know if you have any questions!
 
 ## Sites
 
@@ -74,7 +74,7 @@ FWIW, HackerRank and Codewars are both listed there.  `:)`
 
 ## Koans
 
-Lastly, here are the Python and Perl [koans][1]:
+Lastly, here are the Python and Perl [koans][#footnotes]:
 
 * [https://github.com/gregmalcolm/python\_koans](https://github.com/gregmalcolm/python_koans)
 * [https://github.com/forcedotcom/PerlKoans](https://github.com/forcedotcom/PerlKoans)
@@ -115,17 +115,19 @@ the language is involved with the particular koan each time.
 So that's how you're supposed to think about it, but what are you really supposed to
 **do**?
 
-The quick version, taking the [Python][2] koans as an example, you would cd into either
+The quick version, taking the [Python][#footnotes] koans as an example, you would cd into either
 the 'python2' or 'python3' dir, and then just run 'run.sh'.
 
 The longer version is "RTFM".  `:)`  Each of the koans comes with a README that tells you
 how to use them, which is highly recommended reading.
 
 
-[1]: "Koans" are named for the paradoxical statements Zen Buddhists use for contemplation
+## Footnotes
+
+**1** "Koans" are named for the paradoxical statements Zen Buddhists use for contemplation
 and enlightenment, such as "What is the sound of one hand clapping?"
 
-[2]: As an aside, if you're going to learn Python, learn Python 3.  It's good to learn
+**2** As an aside, if you're going to learn Python, learn Python 3.  It's good to learn
 about Python 2, because there's a lot of legacy code out there, but Python 2 is EOL as of
 2020.  The Python community is STRONGLY in favor of all new code being in Python 3.
 
