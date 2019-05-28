@@ -128,6 +128,6 @@ how to use them, which is highly recommended reading.
 and enlightenment, such as "What is the sound of one hand clapping?"
 
 **2** As an aside, if you're going to learn Python, learn Python 3.  It's good to learn
-about Python 2, because there's a lot of legacy code out there, but Python 2 is EOL as of
-2020.  The Python community is STRONGLY in favor of all new code being in Python 3.
+about Python 2, because there's a lot of legacy code out there, but Python 2 is EOL as of 2020.
+The Python community is STRONGLY in favor of all new code being in Python 3.
 
