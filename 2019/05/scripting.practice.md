@@ -75,7 +75,7 @@ FWIW, HackerRank and Codewars are both listed there.  `:)`
 
 ## Koans
 
-Lastly, here are the Python and Perl [koans](#footnotes):
+Lastly, here are the Python and Perl koans [[1]](#footnotes):
 
 * [https://github.com/gregmalcolm/python\_koans](https://github.com/gregmalcolm/python_koans)
 * [https://github.com/forcedotcom/PerlKoans](https://github.com/forcedotcom/PerlKoans)
@@ -124,8 +124,8 @@ the language is involved with the particular koan each time.
 So that's how you're supposed to think about it, but what are you actually supposed to
 **do**?
 
-The quick version, taking the [Python](#footnotes) koans as an example, you would cd into either
-the 'python2' or 'python3' dir, and then just run `run.sh`.
+In the quick version, taking the Python [[2]](#footnotes) koans as an example, you would
+cd into either the 'python2' or 'python3' dir, and then just run `./run.sh`.
 
 The longer version is "RTFM".  `:)`  Each of the koans comes with a README that tells you
 how to use them, which is highly recommended reading.
