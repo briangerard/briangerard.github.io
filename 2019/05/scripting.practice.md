@@ -5,9 +5,9 @@ languages.  Reading books and tutorials helps, but honestly, there is simply no 
 for practice.  Writing and running code, and *especially* screwing it up and fixing it,
 gets me up to speed in a new language more quickly than any amount of reading alone.
 
-Here are some sites I've found useful, along with Python and Perl [Koans](#footnotes).  As
-you'll likely be able to tell, most of the time it's Python, Perl, and Bash that I'm being
-asked about.  Enjoy, and let me know if you have any questions!
+Here are some sites I've found useful, along with Python and Perl Koans [[1]](#footnotes).
+As you'll likely be able to tell, most of the time it's Python, Perl, and Bash that I'm
+being asked about.  Enjoy, and let me know if you have any questions!
 
 ## Sites
 
@@ -44,7 +44,7 @@ Bash, and Python (among many, MANY others).
 This is a little more structured than the others, in that they'll suggest new exercises
 ("katas").  Once you've completed one, there will be suggestions for what to tackle next.
 You can jump to other exercises if you want, filter by language or difficulty, etc.
-There's also some comment functionality as well, but not quite in the same was as on
+There's also some comment functionality as well, but not quite in the same way as on
 Exercism.  Despite the rather shorter blurb here, I do quite like this site.  `:)`  They
 have kata for Python and Shell, but not Perl.
 
@@ -90,7 +90,7 @@ or Fedora instance for these.
 
 ...of course, I will also admit that I am a bit biased toward the \*nix platforms.  `:)`
 
-That being said, t really comes down to where you will be using the language the majority
+That being said, it really comes down to where you will be using the language the majority
 of the time.  If you are going to be working mostly on the \*nix side anyway, it would be
 better to learn there.  There are idiosyncrasies on the M$ side that you probably don't
 want to have to un-learn when moving back.  Mind you, there is definitely value in
@@ -121,11 +121,11 @@ the file you just fixed and try to understand what's really going on there.  Som
 are "deeper" than others, of course, but it helps to really try to grok whatever bit of
 the language is involved with the particular koan each time.
 
-So that's how you're supposed to think about it, but what are you really supposed to
+So that's how you're supposed to think about it, but what are you actually supposed to
 **do**?
 
 The quick version, taking the [Python](#footnotes) koans as an example, you would cd into either
-the 'python2' or 'python3' dir, and then just run 'run.sh'.
+the 'python2' or 'python3' dir, and then just run `run.sh`.
 
 The longer version is "RTFM".  `:)`  Each of the koans comes with a README that tells you
 how to use them, which is highly recommended reading.
@@ -133,10 +133,10 @@ how to use them, which is highly recommended reading.
 
 ## Footnotes
 
-**1** "Koans" are named for the paradoxical statements Zen Buddhists use for contemplation
-and enlightenment, such as "What is the sound of one hand clapping?"
+**\[1\]** "Koans" are named for the paradoxical statements Zen Buddhists use for
+contemplation and enlightenment, such as "What is the sound of one hand clapping?"
 
-**2** As an aside, if you're going to learn Python, learn Python 3.  It's good to learn
+**\[2\]** As an aside, if you're going to learn Python, learn Python 3.  It's good to learn
 about Python 2, because there's a lot of legacy code out there, but Python 2 is EOL as of 2020.
 The Python community is STRONGLY in favor of all new code being in Python 3.
 
