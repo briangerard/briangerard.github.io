@@ -5,8 +5,9 @@ languages.  Reading books and tutorials helps, but honestly, there is simply no 
 for practice.  Writing and running code, and *especially* screwing it up and fixing it,
 gets me up to speed in a new language more quickly than any amount of reading alone.
 
-Here are some sites I've found useful, along with Python and Perl [Koans](#footnotes).
-Enjoy, and let me know if you have any questions!
+Here are some sites I've found useful, along with Python and Perl [Koans](#footnotes).  As
+you'll likely be able to tell, most of the time it's Python, Perl, and Bash that I'm being
+asked about.  Enjoy, and let me know if you have any questions!
 
 ## Sites
 
@@ -44,7 +45,7 @@ This is a little more structured than the others, in that they'll suggest new ex
 ("katas").  Once you've completed one, there will be suggestions for what to tackle next.
 You can jump to other exercises if you want, filter by language or difficulty, etc.
 There's also some comment functionality as well, but not quite in the same was as on
-Exercism.  Despite the rather shorter blurb here, I do quite like this site.  :)  They
+Exercism.  Despite the rather shorter blurb here, I do quite like this site.  `:)`  They
 have kata for Python and Shell, but not Perl.
 
 
@@ -85,10 +86,18 @@ Both of these koans are modeled after what I believe was the original "koans" pa
 For each of those you will need to clone their respective git repos and run it from your
 shell locally.  If you don't run Linux natively on your own system, I would recommend
 pulling down Virtualbox or VMWare Player on your Windoze system and spinning up an Ubuntu
-or Fedora instance for these.  Not that you can't use Windows, but if you are going to be
-working mostly on the \*nix side anyway, it would be better to learn there.  There are
-idiosyncrasies on the M$ side that you probably don't want to have to un-learn when moving
-back.
+or Fedora instance for these.
+
+...of course, I will also admit that I am a bit biased toward the \*nix platforms.  `:)`
+
+That being said, t really comes down to where you will be using the language the majority
+of the time.  If you are going to be working mostly on the \*nix side anyway, it would be
+better to learn there.  There are idiosyncrasies on the M$ side that you probably don't
+want to have to un-learn when moving back.  Mind you, there is definitely value in
+learning how to code in a platform-agnostic way so your code can be portable across OSes.
+My point is simply that it might be better to focus on the basics of the language first
+and *then* work on portability.
+
 
 ### How to Use the Koans
 
