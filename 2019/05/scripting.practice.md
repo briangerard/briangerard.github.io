@@ -5,7 +5,7 @@ languages.  Reading books and tutorials helps, but honestly, there is simply no 
 for practice.  Writing and running code, and *especially* screwing it up and fixing it,
 gets me up to speed in a new language more quickly than any amount of reading alone.
 
-Here are some sites I've found useful, along with Python and Perl [Koans][#footnotes].
+Here are some sites I've found useful, along with Python and Perl [Koans](#footnotes).
 Enjoy, and let me know if you have any questions!
 
 ## Sites
@@ -74,7 +74,7 @@ FWIW, HackerRank and Codewars are both listed there.  `:)`
 
 ## Koans
 
-Lastly, here are the Python and Perl [koans][#footnotes]:
+Lastly, here are the Python and Perl [koans](#footnotes):
 
 * [https://github.com/gregmalcolm/python\_koans](https://github.com/gregmalcolm/python_koans)
 * [https://github.com/forcedotcom/PerlKoans](https://github.com/forcedotcom/PerlKoans)
@@ -115,7 +115,7 @@ the language is involved with the particular koan each time.
 So that's how you're supposed to think about it, but what are you really supposed to
 **do**?
 
-The quick version, taking the [Python][#footnotes] koans as an example, you would cd into either
+The quick version, taking the [Python](#footnotes) koans as an example, you would cd into either
 the 'python2' or 'python3' dir, and then just run 'run.sh'.
 
 The longer version is "RTFM".  `:)`  Each of the koans comes with a README that tells you
