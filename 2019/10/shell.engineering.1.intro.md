@@ -20,9 +20,7 @@ testing your code is likely overkill and very closely akin to premature optimiza
 
 A quote from Larry Wall about Perl would apply equally well here: "A Perl script is
 correct if it's halfway readable and it gets the job done before your boss fires you."
-([http://ciscohouston.com/docs/docs/quotes/wall.html](one source), though it's also
-paraphrased in the book [https://en.wikipedia.org/wiki/Programming_Perl](Programming
-Perl), pp *xx*).  That is to say, I wouldn't advocate polishing your shell script to the
+[[1]](#footnotes)  That is to say, I wouldn't advocate polishing your shell script to the
 Nth degree if it's just a throwaway.  Just write it, run it, and move on to more
 interesting things.
 
@@ -46,5 +44,11 @@ help for you anyway.  `;-)`  As for the newer shells (Zsh, Fish, etc.), they're 
 common enough as yet.  If this series gets popular enough, I may dedicate some space to
 them, but that's getting a bit ahead of ourselves at this point.
 
-Enough with the preliminaries already - [shell.engineering.2.vars.and.fns.md](on with the
+Enough with the preliminaries already - [shell.engineering.2.vars.and.fns.html](on with the
 show!)
+
+## Footnotes
+
+**\[1\]** Here's [http://ciscohouston.com/docs/docs/quotes/wall.html](one source) for that
+quote, and it's also paraphrased in the book [https://en.wikipedia.org/wiki/Programming_Perl](Programming Perl),
+pp *xx*
