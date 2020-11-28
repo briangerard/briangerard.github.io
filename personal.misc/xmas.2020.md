@@ -14,7 +14,7 @@ I'd prefer level 4 or above, but I'm good with a lower level one if it's pretty 
 
 In no particular order...
 
-- (https://www.amazon.com/Hanayama-Metal-Brain-Teaser-Puzzle/dp/B0038BE94Q)[Hanayama
+- (https://www.amazon.com/Hanayama-Metal-Brain-Teaser-Puzzle/dp/B0038BE94Q)[Hanayama \
   "Equa"]
 - (https://www.amazon.com/MARBLE-Hanayama-Metal-Teaser-Puzzle/dp/B018RC3AZO)[Hanayama
   "Marble"]
