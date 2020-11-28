@@ -44,11 +44,10 @@ help for you anyway.  `;-)`  As for the newer shells (Zsh, Fish, etc.), they're 
 common enough as yet.  If this series gets popular enough, I may dedicate some space to
 them, but that's getting a bit ahead of ourselves at this point.
 
-Enough with the preliminaries already - [shell.engineering.2.vars.and.fns.html](on with the
-show!)
+Enough with the preliminaries already - [on with the show!](shell.engineering.2.vars.and.fns.html)
 
 ## Footnotes
 
-**\[1\]** Here's [http://ciscohouston.com/docs/docs/quotes/wall.html](one source) for that
-quote, and it's also paraphrased in the book [https://en.wikipedia.org/wiki/Programming_Perl](Programming Perl),
+**\[1\]** Here's [one source](http://ciscohouston.com/docs/docs/quotes/wall.html) for that
+quote, and it's also paraphrased in the book [Programming Perl](https://en.wikipedia.org/wiki/Programming_Perl),
 pp *xx*
