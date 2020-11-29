@@ -34,4 +34,18 @@ I like these specifically...
 - [Star Wars Y-Wing](https://www.amazon.com/Fascinations-Skywalker-Zoriis-Y-Wing-Fighter/dp/B07XZNBLJY)
 - [Star Wars Star Destoyer](https://www.amazon.com/Fascinations-Metal-Earth-Imperial-Destroyer/dp/B07XZNBR4H)
 
+### Game of Thrones
+
+These are all good.  `:)`
+
+- [Beer Coozies!](https://www.amazon.com/Thrones-Inspired-Merchandise-Collectible-Sleeves/dp/B07571NHHX)
+- [Model of Winterfell](https://www.amazon.com/3D-Puzzle-Game-Thrones-Winterfell/dp/B07YGYW48P)
+- [Jumbo GoT Coffee Mug](https://www.amazon.com/Game-Thrones-20-Mug-Collectible/dp/B071VKKSK2) (color scheme: Sigils)
+
+### Other Miscellaneous Stuff
+
+- A competition Rubik's Cube
+- [A DIY 3D Light Cube Kit](https://www.amazon.com/Icubesmart-Animation-Electronic-Teenagers-Activities/dp/B07GRDRPST)
+- [What If?](https://www.amazon.com/What-If-Scientific-Hypothetical-Questions/dp/0544272994), or
+  really any book by [Randall Munroe](https://www.amazon.com/Randall-Munroe/e/B004H66444)
 
