@@ -42,6 +42,19 @@ These are all good.  `:)`
 - [Model of Winterfell](https://www.amazon.com/3D-Puzzle-Game-Thrones-Winterfell/dp/B07YGYW48P)
 - [Jumbo GoT Coffee Mug](https://www.amazon.com/Game-Thrones-20-Mug-Collectible/dp/B071VKKSK2) (color scheme: Sigils)
 
+### Guitar
+
+- [This Capo](https://www.amazon.com/WINGO-Acoustic-Electric-Ukulele-Rosewood/dp/B073LSS9TJ)
+- [Accessory Organizer](https://www.amazon.com/Newport-Design-Universal-Accessory-Organizer/dp/B0893JKYJY)
+- [A New Case](https://www.amazon.com/CAHAYA-Acoustic-Waterproof-Adjustable-Shoulder/dp/B079FRVSPH)
+- Any of these books:
+  - [Guitar Fretboard](https://www.amazon.com/Guitar-Fretboard-Memorize-Exercises-Included/dp/1719064873)
+  - [100 Most Popular Songs for Fingerpicking Guitar](https://www.amazon.com/Most-Popular-Songs-Fingerpicking-Guitar/dp/1540027546)
+  - [First 50 Songs You Should Play On Acoustic Guitar](https://www.amazon.com/First-Songs-Should-Acoustic-Guitar/dp/1480398128)
+  - [Campfire Songs - Strum Together](https://www.amazon.com/Campfire-Songs-Hal-Leonard-Corp/dp/1540049396)
+  - [100 Most Beautiful Songs Ever For Fingerpicking Guitar](https://www.amazon.com/Most-Beautiful-Songs-Fingerpicking-Guitar/dp/1458423301)
+  - [Complete Guitar Player Acoustic Songbook](https://www.amazon.com/Complete-Guitar-Player-Acoustic-Songbook/dp/1495013073)
+
 ### Other Miscellaneous Stuff
 
 - A competition Rubik's Cube
