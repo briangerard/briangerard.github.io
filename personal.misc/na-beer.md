@@ -1,4 +1,15 @@
-# Non-Alcoholic Beers and Breweries
+# Non-Alcoholic Beer
+
+A place for me to track non-alcoholic breweries and beers, maybe post some reviews, etc.
+
+Kicking things off, the [Non-Alcoholic Beer Channel](https://www.youtube.com/channel/UCb_JFQ1H3ktF_xG7fnmfbRQ)
+is a great resource for reviews on these beers.  The host quit drinking for dry January in
+2019 (I think), and found enough good N/A selections that he just stayed quit afterwards.
+Now he posts reviews and gets ahold of some pretty rare selections sometimes as well. (What,
+me jealous?)
+
+I'll add some brief reviews here as I think of it.  For now, here's a list of the breweries
+and beers I've found (and mostly have tried).
 
 ## Non-Alcoholic Breweries
 
