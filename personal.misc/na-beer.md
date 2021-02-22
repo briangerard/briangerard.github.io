@@ -31,7 +31,7 @@ and beers I've found (and mostly have tried).
 - [Brewdog](https://shopusa.brewdog.com/collections/non-alcoholic)
   - Styles: Hoppy Ale, IPA, Sour Grapefruit, Hazy IPA, Espresso Stout
 - [Deschutes Brewery](https://shop.deschutesbrewery.com/na-irish-style-stout-6pk-cans-p102.aspx)
-  - Styles: Irish Stout (sold out as of January 2021; projected back in the Spring)
+  - Styles: Irish Stout - REALLY good!
 - [Brooklyn Brewery](https://brooklynbrewery.com/brooklyn-beers/non-alcoholic/)
   - Styles: IPA, Amber
 - [Untitled Art](https://drinkuntitled.com/products/non-alcoholic-chocolate-milk-stout-4-pack?variant=32416426393697)
