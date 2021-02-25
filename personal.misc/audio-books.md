@@ -1,23 +1,23 @@
-# Favorite Audio Books
+# Favorite Audiobooks
 
-These are some audio books I've listened to and enjoyed immensely.  I do so significantly less often now
+These are some audiobooks I've listened to and enjoyed immensely.  I do so significantly less often now
 that I work full time remotely, but I'll still treat myself to one when I travel.
 
 I'm going to start with a sort of thematic breakdown.
 
-One thing to note is that I typically only listen to non-fiction audio books.  For whatever reason, I
+One thing to note is that I typically only listen to non-fiction audiobooks.  For whatever reason, I
 prefer reading fiction dead-tree style.
 
 ## Motivation, Professional Development
 
 - [100 Ways to Create Wealth](https://www.amazon.com/Ways-Create-Wealth-Steve-Chandler/dp/1931741786), Steve Chandler and Sam Beckford
-  - This was one of the first personal development audio books I read, and it's still one of my
-    favorites.  Steve is very down-to-earth and witty in this, while still giving some great advice
+  - This was one of the first personal development audiobooks I listened to, and it's still one of
+    my favorites.  Steve is very down-to-earth and witty in this, while giving some great advice
     for succeeding in business and life.  Read by Steve himself.
 - [Time Warrior](https://www.amazon.com/Time-Warrior-procrastination-people-pleasing-over-commitment/dp/1600250378), Steve Chandler
   - Another good one from Steve Chandler.  Similar style, but he gets a little more... how to say
-    it... abstract?  In parts of it, anyway.  Still a lot of good practical advice, and an enjoyable
-    listen.  Not read by Steve, unfortunately.
+    it... abstract? philosophical?  In parts of it, anyway.  Still a lot of good practical advice,
+    and an enjoyable listen.  Not read by Steve, unfortunately.
 - [Influencer, The Power to Change Anything](https://www.amazon.com/Influencer-Science-Leading-Change-Second/dp/0071808868), Kerry Patterson, Joseph Grenny, et al.
   - This is a great exploration of how to influence change in your life, the lives of those around
     you, and in the world.  It outlines the authors' decades-long study of successful change agents
@@ -33,7 +33,7 @@ prefer reading fiction dead-tree style.
     Change Anything.  Not read by an author this time.
 - [How To Become CEO](https://www.amazon.com/How-Become-CEO-Rising-Organization/dp/0786864370), Jeffrey J. Fox
   - So this is one I picked up from a used bookstore because it's all they had at the time and I
-    needed my fix (I strongly recommend having one or two spare audio books close to hand to avoid
+    needed my fix (I strongly recommend having one or two spare audiobooks close to hand to avoid
     such a horror).  Despite that, I did find this one useful.  It's not just about becoming CEO.
     This is really for anyone who wants to be more of a leader in their own life, personally or
     professionally.  It's a set of 75 "rules" that he lays out; both things to do and things to
@@ -53,7 +53,8 @@ prefer reading fiction dead-tree style.
     atheist, a truly fierce debater, and a phenomenal speaker.  He was, over time, a citizen of the
     U.K. and the U.S., a staunch leftist (some mix of communist and socialist), and eventually a
     conservative.  He led a fascinating life, and it's quite the experience to hear him tell it.
-    Thankfully read by the author.
+    Thankfully read by the author, who I would be quite content to listen to were he reading a
+    cookbook.
 - [The Age of Turbulence](https://www.amazon.com/Age-Turbulence-Adventures-New-World/dp/0143114166), Alan Greenspan
   - Not strictly a biography of Alan Greenspan, but it was autobiographical with respect to his role
     in the world of modern finance.  This really gives an interesting perspective on some of the
@@ -64,7 +65,8 @@ prefer reading fiction dead-tree style.
 ## Skill Building
 
 - [Getting Things Done](https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0143126563), David Allen
-  - NOTE: This looks like it may be a more recent revision of the book than the one I've heard.
+  - NOTE: The link above looks like it may be a more recent revision of the book than the one I've
+    heard.
   - This is the outline of the "Getting Things Done" (or "GTD") system of productivity.  This is one
     of the most practically useful audiobooks I've ever listened to.  Even though the material in
     the version I heard was a bit dated (it was largely written before electronic storage and file
