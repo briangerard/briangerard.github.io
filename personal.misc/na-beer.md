@@ -34,7 +34,7 @@ and beers I've found (and mostly have tried).
   - Styles: Irish Stout - REALLY good!
 - [Brooklyn Brewery](https://brooklynbrewery.com/brooklyn-beers/non-alcoholic/)
   - Styles: IPA, Amber
-- [Untitled Art](https://drinkuntitled.com/products/non-alcoholic-chocolate-milk-stout-4-pack?variant=32416426393697)
+- [Untitled Art](https://shop.drinkuntitled.com/collections/shop/products/non-alcoholic-chocolate-milk-stout-4-pack?variant=32416426393697)
   - Styles: Chocolate Milk Stout
 - [Drizzly](https://drizly.com/beer/specialty-beer-alternatives/non-alcoholic-beer/c197002)
   - Styles: Many; they're a shopping site that features other breweries
