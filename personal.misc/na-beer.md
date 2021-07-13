@@ -38,3 +38,5 @@ and beers I've found (and mostly have tried).
   - Styles: Chocolate Milk Stout
 - [Drizzly](https://drizly.com/beer/specialty-beer-alternatives/non-alcoholic-beer/c197002)
   - Styles: Many; they're a shopping site that features other breweries
+- [Ceria](https://na.ceriabrewing.com/)
+  - Styles: Belgian White and IPA
