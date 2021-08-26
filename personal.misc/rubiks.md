@@ -43,9 +43,9 @@ The algorithms referred to in the steps are described below.
    A A A  . . .  . . .  . . .  . . .  . . .
    ```
 
-1. Move the middle side pieces to their correct spots.
-
-   **TODO**
+1. Move the middle side pieces to their correct spots.  See "Completing The Second Row" in
+   the Algorithms section.  You will use that algorithm once for each piece that needs to
+   be moved into its place.
 
    The cube should now look like this:
 
@@ -56,10 +56,22 @@ The algorithms referred to in the steps are described below.
    A A A  . . .  . . .  . . .  . . .  . . .
    ```
 
-1. Turn the cube over such that the old TOP is now the BOTTOM.  Make a "plus" on the new
-   TOP, using FRU-RUF.
+1. Turn the cube over so that the old TOP is now the BOTTOM.  You will now make a "plus"
+   on the new TOP, using FRU-RUF.
 
-   **TODO**
+   You want the cube to be oriented such that it looks like one of the following patterns
+   (in order of preference):
+
+   ```
+   TOP                TOP                      TOP              TOP
+   . . .              . . .                    . . .            . . .
+   . A .  or, better  . A A  or, still better  . A A  or, best  A A A
+   . . .              . . .                    . A .            . . .
+   ```
+
+   Orient the cube so that it does, and then use FRU-RUF.  If it's still not a "plus" (see
+   diagram below), re-orient it so it looks like the best of the above shapes that it can,
+   and use FRU-RUF again.  Repeat until you get the "plus".
 
    The cube should now look like this:
 
@@ -141,15 +153,104 @@ The algorithms referred to in the steps are described below.
 
 General Notes
 
-* In the descriptions below, "U" stands for "Upper", which would be "TOP" in the diagrams.
-  Using "U" just put a vowel in the acronyms, which made them somewhat pronouncable and
-  helped them stick in my brain when I was learning them.  :)  YMMV
+* In the short forms below, "U" stands for "Upper", which would be "TOP" in the diagrams.
+  Using "U" just injected a vowel in the acronyms, which made them somewhat pronouncable
+  and helped them stick in my brain when I was learning them.  :)  YMMV.
 * CW  = clockwise
 * CCW = counter-clockwise
 * X  = Rotate side X 90' CW    (ex: R  == rotate the RIGHT side 90' CW)
 * X' = Rotatate side X 90' CCW (ex: R' == rotate the RIGHT side 90' CCW)
+* For CW/CCW on TOP and BOTTOM, the rotation is oriented as if you were viewing that side
+  face-on.  I.e. - as if you were holding the cube with that side as the FRONT.
+* As it happens, the BACK side is never manipulated in the algorithms.  So if a "B"
+  appears in an algorithm's short form, that stands for BOTTOM.
 * Individual pieces are designated by SIDE-EDGE-PLACE, so TOP-LEFT-MIDDLE is the piece
   located on the TOP side, on the LEFT edge of the side, in the MIDDLE position.
+
+---
+
+### Completing The Second Row
+
+There are three possible positions you can be in.  Note that you may need to rotate the
+BOTTOM side 90-180' in order to get to one of them.
+
+```
+1. The piece that belongs in the FRONT-RIGHT-MIDDLE position is in the FRONT-BOTTOM-MIDDLE
+   position.
+FRONT  RIGHT  BOTTOM
+A A A  B B B  . B .
+. A .  . B .  . . .
+. A .  . . .  . . .
+```
+
+```
+2. The piece that belongs in the FRONT-LEFT-MIDDLE position is in the FRONT-BOTTOM-MIDDLE
+   position.
+LEFT   FRONT  BOTTOM
+A A A  B B B  . A .
+. A .  . B .  . . .
+. . .  . B .  . . .
+```
+
+```
+3. The piece that belongs in the FRONT-RIGHT-MIDDLE position is there, but is oriented
+   backwards.
+FRONT  RIGHT
+A A A  B B B
+. A B  A B .
+. . .  . . .
+```
+
+#### Scenario 1
+
+Short form: **B'R'BRBFB'F'**
+
+Long form:
+
+1. Rotate BOTTOM 90' CCW
+1. Rotate RIGHT 90' CCW
+1. Rotate BOTTOM 90' CW
+1. Rotate RIGHT 90' CW
+1. Rotate BOTTOM 90' CW
+1. Rotate FRONT 90' CW
+1. Rotate BOTTOM 90' CCW
+1. Rotate FRONT 90' CCW
+
+
+#### Scenario 2
+
+Short form: **BLB'L'B'F'BF**
+
+Long form:
+
+1. Rotate BOTTOM 90' CW
+1. Rotate LEFT 90' CW
+1. Rotate BOTTOM 90' CCW
+1. Rotate LEFT 90' CCW
+1. Rotate BOTTOM 90' CCW
+1. Rotate FRONT 90' CCW
+1. Rotate BOTTOM 90' CW
+1. Rotate FRONT 90' CW
+
+
+#### Scenario 3
+
+Here you will move the piece such that you end up with Scenario 1 and then use that
+algorithm.
+
+Short form: **R'BRBFB'F'BB**
+
+Long form:
+
+1. Rotate RIGHT 90' CCW
+1. Rotate BOTTOM 90' CW
+1. Rotate RIGHT 90' CW
+1. Rotate BOTTOM 90' CW
+1. Rotate FRONT 90' CW
+1. Rotate BOTTOM 90' CCW
+1. Rotate FRONT 90' CCW
+1. Rotate BOTTOM 90' CW
+1. Rotate BOTTOM 90' CW
 
 ---
 
