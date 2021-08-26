@@ -176,15 +176,37 @@ course, there are a few more steps to it than that. `;)`
 1. Manipulate the corner pieces until there's at least one corner in its correct spot,
    using LURU2.
 
-   **TODO**
+   The cube should now look like the following diagram, but with the condition that at
+   least one of the TOP corners' colors should be the same colors as all of its
+   corresponding sides, even if they're not in the correct orientation.  Example: Let's
+   say TOP is blue, RIGHT is white, and BACK is red.  If the corner piece adjacent to all
+   three of those sides (in other words, the TOP-RIGHT-BACK corner) is the red+white+blue
+   corner piece, the condition is fulfilled, regardless of whether the white face of the
+   piece is on the RIGHT side of the cube at this point.
 
-   The cube should now look like this, but with the condition that at least one of the TOP
-   corners' colors should be the same colors as all of its corresponding sides, even if
-   they're not in the correct orientation.  Example: Let's say TOP is blue, RIGHT is
-   white, and BACK is red.  If the corner piece adjacent to all three of those sides (in
-   other words, the TOP-RIGHT-BACK corner) is the red+white+blue corner piece, the
-   condition is fulfilled, regardless of whether the white face of the piece is on the
-   RIGHT side of the cube at this point.
+   If the cube is already in this state after the previous step, you can skip this step.
+
+   ```
+   TOP    FRONT  LEFT   BACK   RIGHT  BOTTOM
+   . A .  . B .  . C .  . D .  . E .  F F F
+   A A A  B B B  C C C  D D D  E E E  F F F
+   . A .  B B B  C C C  D D D  E E E  F F F
+   ```
+
+1. If **all** of the TOP corner pieces are positioned such that their colors correspond to
+   the sides they're adjacent to, even if the orientation is off, you can skip this step.
+   E.g. - The red+white+blue corner piece is in the corner adjacent to the red, white, and
+   blue sides, regardless of whether each color is facing its corresponding side.  If all
+   the TOP corner pieces are like that, you can skip this step.
+
+   Otherwise, hold the cube such that the corner piece that is in its correct spot is in
+   the TOP-RIGHT-FRONT position.  Use LURU2 repeatedly from this position until the
+   remaining corners are all in their correct places (color-wise) as well.  Orientation
+   still doesn't matter at this point.  None, some, or even all of the corners may be
+   correctly oriented.
+
+   The cube should now look like this, but all of the TOP corner pieces should be
+   positioned as described above:
 
    ```
    TOP    FRONT  LEFT   BACK   RIGHT  BOTTOM
@@ -193,26 +215,17 @@ course, there are a few more steps to it than that. `;)`
    . A .  B B B  C C C  D D D  E E E  F F F
    ```
 
-1. Hold the cube such that corner piece that's in its correct spot is in the
-   TOP-RIGHT-FRONT position.  Use LURU2 repeatedly from this position until the remaining
-   corners are all in their correct places (color-wise) as well.  Orientation still
-   doesn't matter at this point.  None, some, or even all of the corners may be correctly
-   oriented.
-
-   **TODO**
-
-   The cube should now look like this:
-
-   ```
-   TOP    FRONT  LEFT   BACK   RIGHT  BOTTOM
-   . A .  . B .  . C .  . D .  . E .  F F F
-   A A A  B B B  C C C  D D D  E E E  F F F
-   . A .  B B B  C C C  D D D  E E E  F F F
-   ```
+   So TOP-FRONT-LEFT should be colored {A,B,C} (in some order), TOP-FRONT-RIGHT should be
+   {A,B,E}, TOP-BACK-LEFT should be {A,C,D}, and TOP-BACK-RIGHT should be {A,D,E}.
 
 1. Use RU2+LU2 to rotate the corners into their final correct orientations.
 
-   **TODO**
+   The RU2+LU2 algorithm rotates both TOP-RIGHT corner pieces at once, leaving the rest of
+   the cube untouched.  So you'll want to orient the cube such that one or both of those
+   corners are misaligned, and then execute the algorithm once or twice until at least one
+   of them is aligned correctly (doing it three times returns you to your original state).
+   You may need to re-orient the cube and repeat this process a couple of times until all
+   the corners are correct.
 
    The cube should now look like this:
 
@@ -223,7 +236,7 @@ course, there are a few more steps to it than that. `;)`
    A A A  B B B  C C C  D D D  E E E  F F F
    ```
 
-1. Bask in the glow of your success.
+1. Bask in the glow of your intellectual prowess.
 
 
 ## Algorithms
@@ -252,8 +265,8 @@ There are three possible positions you can be in.  Note that you may need to rot
 BOTTOM side 90-180' in order to get to one of them exactly.
 
 ```
-1. The piece that belongs in the FRONT-RIGHT-MIDDLE position is in the FRONT-BOTTOM-MIDDLE
-   position.
+1. The piece that belongs in the FRONT-RIGHT-MIDDLE position is in the
+   FRONT-BOTTOM-MIDDLE position.
 FRONT  RIGHT  BOTTOM
 A A A  B B B  . B .
 . A .  . B .  . . .
@@ -261,8 +274,8 @@ A A A  B B B  . B .
 ```
 
 ```
-2. The piece that belongs in the FRONT-LEFT-MIDDLE position is in the FRONT-BOTTOM-MIDDLE
-   position.
+2. The piece that belongs in the FRONT-LEFT-MIDDLE position is in the
+   FRONT-BOTTOM-MIDDLE position.
 LEFT   FRONT  BOTTOM
 A A A  B B B  . A .
 . A .  . B .  . . .
@@ -270,8 +283,8 @@ A A A  B B B  . A .
 ```
 
 ```
-3. The piece that belongs in the FRONT-RIGHT-MIDDLE position is there, but is oriented
-   backwards.
+3. The piece that belongs in the FRONT-RIGHT-MIDDLE position is there,
+   but is oriented backwards.
 FRONT  RIGHT
 A A A  B B B
 . A B  A B .
@@ -370,17 +383,17 @@ A A A
 
 ### LURU2
 
-Short form: **LU'R'UL'U'RU**
+Short form: **L'URU'LUR'U'**
 
 Long form:
 
-1. Rotate LEFT 90' CW
-1. Rotate TOP 90' CCW
+1. Rotate LEFT 90' CCW
+1. Rotate TOP 90' CW
 1. Rotate RIGHT 90' CW
 1. Rotate TOP 90' CCW
 1. Rotate LEFT 90' CW
 1. Rotate TOP 90' CW
-1. Rotate RIGHT 90' CW
+1. Rotate RIGHT 90' CCW
 1. Rotate TOP 90' CCW
 
 
@@ -404,7 +417,7 @@ X . Y
 Z . .
 ```
 
-Where X, Y, and Z refer to the same colors between those two diagrams.
+Where X, Y, and Z refer to the same PIECES (**not** colors!) between those two diagrams.
 
 ---
 
