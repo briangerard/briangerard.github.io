@@ -1,9 +1,29 @@
 # Solving a Rubik's Cube
 
-This is definitely not the only way to solve a cube, but it's the way I learned.
+This is definitely not the only way to solve a cube, but it is the way I learned (and so
+far the only way I know).
+
+The process is basically this:
+
+1. Solve one side, making sure to align its edges with the center dots on its adjacent
+   sides.
+1. Move the middle row pieces into their positions, so now the top two rows of the cube
+   are solved.
+1. Make a "plus" sign on the bottom side of the correct color.
+1. Align the "plus" sign's edge pieces with the correct adjacent sides (e.g. - so the blue
+   edge piece is on the blue side, say).
+1. Move the bottom side's corner pieces to their correct positions (but likely not yet
+   oriented correctly).
+1. Rotate the bottom side's corner pieces correctly.
+
+So it's progressively solving it from one side to the opposite side, in other words.  Of
+course, once you get into the details there are a few more steps involved. `;)`
 
 
 ## General Notes, Terminology, etc.
+
+The algorithms referred to in the Steps section are described below in the Algorithms
+section.
 
 Saying that a side "is" a particular color refers to only the center dot on a side.
 Referring to "the blue side", for instance, would refer to the side with the blue dot in
@@ -14,46 +34,33 @@ you are holding the cube at the time.  The assumption is always that you are loo
 the cube face-on, with FRONT facing you, BACK being the side opposite that, and LEFT,
 RIGHT, TOP, and BOTTOM being fairly self-explanatory from there.
 
+Individual pieces are designated by SIDE-EDGE-PLACE, so TOP-LEFT-MIDDLE is the piece
+located on the TOP side, on the LEFT edge of the side, in the MIDDLE position.
+
+For the sake of brevity, CW = clockwise and CCW = counter-clockwise.  When describing
+CW/CCW rotations, the rotation is always directed as if you were viewing that side
+face-on.  I.e. - as if you were holding the cube with that side as the FRONT.
+
 Key to the cube "diagrams" (if you'll excuse the exaggeration):
 <dl>
     <dt>X</dt>
     <dd>That is to say, any single letter.  One specific color on the entire cube.  So for
-        example an &quot;A&quot; would be a particular color, and would be that same color
-        across sides in a particular diagram.  Unless otherwise noted, a specific letter
-        probably won't refer to the same color from diagram to diagram.</dd>
+        example an &quot;A&quot; would stand for one particular color, and would be that
+        same color across all the sides in a particular diagram.  Unless otherwise noted,
+        a specific letter probably won't refer to the same color from diagram to
+        diagram.</dd>
     <dt>.</dt>
-    <dd>Any color.  Basically, a placeholder to mark a spot whose color doesn't matter in
-        the context of that diagram.</dd>
+    <dd>A placeholder to mark a spot whose color doesn't matter in the context of that
+        diagram.</dd>
 </dl>
 
-The algorithms referred to in the Steps section are described below it in the Algorithms
-section.
-
-
-## Process Overview
-
-The overall process can be thought of like this:
-
-1. Solve one side, making sure to align its edges with the center dots on its adjacent
-   sides.
-1. Move the middle row pieces into their positions, so now the top two rows of the cube
-   are solved.
-1. Make a "plus" sign on the bottom side of the correct color.
-1. Align the "plus" sign's edge pieces with the correct adjacent sides (e.g. - so the blue
-   edge piece is on the blue side, say).
-1. Move the bottom side's corner pieces to their correct positions (likely not oriented
-   correctly).
-1. Rotate the bottom side's corner pieces correctly.
-
-So it's progressively solving it from one side to the opposite side, in other words.  Of
-course, there are a few more steps to it than that. `;)`
 
 ## Steps
 
 1. Solve one face such that each of the edges is the same color as its respective face's
    center dot.  There's no particular algorithm for this; you're just solving a single
    side but also paying attention to the secondary colors on each piece that you move into
-   its position.
+   position.
 
    The cube should now look like this:
 
@@ -78,7 +85,7 @@ course, there are a few more steps to it than that. `;)`
    ```
 
 1. Turn the cube over so that the old TOP is now the BOTTOM.  You will now make a "plus"
-   on the new TOP, using FRU-RUF.
+   on the new TOP, using the FRU-RUF algorithm.
 
    You want the cube to be oriented such that it looks like one of the following patterns
    (in order of preference):
@@ -109,8 +116,8 @@ course, there are a few more steps to it than that. `;)`
 
    You *may* get lucky and the cube already looks like the desired result after the
    previous step.  In the majority of cases, the cube will be in one of the following
-   positions.  Note that you may have to rotate the TOP side and/or re-orient the cube to
-   make it look exactly like one of these.
+   positions instead.  Note that you may have to rotate the TOP side and/or re-orient the
+   cube to make it look exactly like one of these.
 
    ```
    1. Two opposite sides are correct, the other two are swapped.
@@ -158,6 +165,7 @@ course, there are a few more steps to it than that. `;)`
       I.e. - The cube should now be in position 3.
 
    For position 3:
+
    1. Orient the cube so that the side with the **correct** colored edge piece is FRONT.
    1. Check the BACK-TOP-MIDDLE piece.  Does the color on the BACK side of that piece need
    to move to the LEFT or RIGHT side?
@@ -246,16 +254,10 @@ General Notes
 * In the short forms below, "U" stands for "Upper", which would be "TOP" in the diagrams.
   Using "U" just injected a vowel in the acronyms, which made them somewhat pronouncable
   and helped them stick in my brain when I was learning them.  `:)`  YMMV.
-* CW  = clockwise
-* CCW = counter-clockwise
 * X  = Rotate side X 90' CW    (ex: R  == rotate the RIGHT side 90' CW)
 * X' = Rotatate side X 90' CCW (ex: R' == rotate the RIGHT side 90' CCW)
-* For CW/CCW on TOP and BOTTOM, the rotation is oriented as if you were viewing that side
-  face-on.  I.e. - as if you were holding the cube with that side as the FRONT.
 * As it happens, the BACK side is never manipulated in the algorithms.  So if a "B"
   appears in an algorithm's short form, that stands for BOTTOM.
-* Individual pieces are designated by SIDE-EDGE-PLACE, so TOP-LEFT-MIDDLE is the piece
-  located on the TOP side, on the LEFT edge of the side, in the MIDDLE position.
 
 ---
 
@@ -485,7 +487,7 @@ Long form:
 1. Rotate LEFT 90' CW
 
 
-Moves TOP-LEFT-MIDDLE, TOP-BACK-MIDDLE, and TOP-RIGHT-MIDDLE one place CW on the TOP side
+Moves TOP-LEFT-MIDDLE, TOP-BACK-MIDDLE, and TOP-RIGHT-MIDDLE one place CW on the TOP side.
 
 I.e. - It turns this...
 
