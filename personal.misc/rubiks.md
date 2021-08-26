@@ -26,18 +26,39 @@ Key to the cube "diagrams" (if you'll excuse the exaggeration):
         the context of that diagram.</dd>
 </dl>
 
-The algorithms referred to in the steps are described below.
+The algorithms referred to in the Steps section are described below it in the Algorithms
+section.
 
+
+## Process Overview
+
+The overall process can be thought of like this:
+
+1. Solve one side, making sure to align its edges with the center dots on its adjacent
+   sides.
+1. Move the middle row pieces into their positions, so now the top two rows of the cube
+   are solved.
+1. Make a "plus" sign on the bottom side of the correct color.
+1. Align the "plus" sign's edge pieces with the correct adjacent sides (e.g. - so the blue
+   edge piece is on the blue side, say).
+1. Move the bottom side's corner pieces to their correct positions (likely not oriented
+   correctly).
+1. Rotate the bottom side's corner pieces correctly.
+
+So it's progressively solving it from one side to the opposite side, in other words.  Of
+course, there are a few more steps to it than that. `;)`
 
 ## Steps
 
 1. Solve one face such that each of the edges is the same color as its respective face's
-   center dot.
+   center dot.  There's no particular algorithm for this; you're just solving a single
+   side but also paying attention to the secondary colors on each piece that you move into
+   its position.
 
    The cube should now look like this:
 
    ```
-   TOP    FRONT  LEFT   RIGHT  BACK   BOTTOM
+   TOP    FRONT  LEFT   BACK   RIGHT  BOTTOM
    A A A  B B B  C C C  D D D  E E E  . . .
    A A A  . B .  . C .  . D .  . E .  . . .
    A A A  . . .  . . .  . . .  . . .  . . .
@@ -50,7 +71,7 @@ The algorithms referred to in the steps are described below.
    The cube should now look like this:
 
    ```
-   TOP    FRONT  LEFT   RIGHT  BACK   BOTTOM
+   TOP    FRONT  LEFT   BACK   RIGHT  BOTTOM
    A A A  B B B  C C C  D D D  E E E  . . .
    A A A  B B B  C C C  D D D  E E E  . . .
    A A A  . . .  . . .  . . .  . . .  . . .
@@ -69,28 +90,84 @@ The algorithms referred to in the steps are described below.
    . . .              . . .                    . A .            . . .
    ```
 
-   Orient the cube so that it does, and then use FRU-RUF.  If it's still not a "plus" (see
-   diagram below), re-orient it so it looks like the best of the above shapes that it can,
-   and use FRU-RUF again.  Repeat until you get the "plus".
+   Orient the cube in your hand so that the TOP resembles the best one of those that it
+   can, and then use FRU-RUF.  If it's still not a "plus" when you finish (see diagram
+   below), once again re-orient it so it looks like the best of the above shapes that it
+   can, and use FRU-RUF again.  Repeat that process until you get the "plus".
 
    The cube should now look like this:
 
    ```
-   TOP    FRONT  LEFT   RIGHT  BACK   BOTTOM
+   TOP    FRONT  LEFT   BACK   RIGHT  BOTTOM
    . A .  . . .  . . .  . . .  . . .  F F F
    A A A  B B B  C C C  D D D  E E E  F F F
    . A .  B B B  C C C  D D D  E E E  F F F
    ```
 
-1. Move the "plus"'s ends such that they're aligned with their correct sides, using RU2 or
-   LU2.
+1. Move the "plus"'s ends such that they're aligned with their correct sides, using
+   combinations of RU2 and/or LU2.
 
-   **TODO**
+   You *may* get lucky and the cube already looks like the desired result after the
+   previous step.  In the majority of cases, the cube will be in one of the following
+   positions.  Note that you may have to rotate the TOP side and/or re-orient the cube to
+   make it look exactly like one of these.
+
+   ```
+   1. Two opposite sides are correct, the other two are swapped.
+
+   TOP    FRONT  LEFT   BACK   RIGHT
+   . A .  . B .  . E .  . D .  . C .
+   A A A  B B B  C C C  D D D  E E E
+   . A .  B B B  C C C  D D D  E E E
+   ```
+
+   ```
+   2. Two adjacent sides are correct, the other two are swapped.
+
+   TOP    FRONT  LEFT   BACK   RIGHT
+   . A .  . B .  . C .  . E .  . D .
+   A A A  B B B  C C C  D D D  E E E
+   . A .  B B B  C C C  D D D  E E E
+   ```
+
+   ```
+   3. One side is correct, the others are all wrong.
+
+   TOP    FRONT  LEFT   BACK   RIGHT
+   . A .  . B .  . E .  . C .  . D .
+   A A A  B B B  C C C  D D D  E E E
+   . A .  B B B  C C C  D D D  E E E
+   ```
+
+   Your goal for positions 1 and 2 are to change them to position 3.
+
+   For position 1:
+
+   1. Re-orient the cube so that the opposite **correct** sides are RIGHT and LEFT.
+   1. Use RU2 once.
+   1. Rotate TOP 90' CW.
+   1. At this point, one edge piece on the cube should be aligned with its correct side.
+      I.e. - The cube should now be in position 3.
+
+   For position 2:
+
+   1. Re-orient the cube so that the adjacent **correct** sides are RIGHT and BACK.
+   1. Use RU2 once.
+   1. Rotate TOP 90' CW.
+   1. At this point, one edge piece on the cube should be aligned with its correct side.
+      I.e. - The cube should now be in position 3.
+
+   For position 3:
+   1. Orient the cube so that the side with the **correct** colored edge piece is FRONT.
+   1. Check the BACK-TOP-MIDDLE piece.  Does the color on the BACK side of that piece need
+   to move to the LEFT or RIGHT side?
+      - If it needs to move to the LEFT side, use LU2.
+      - If it needs to move to the RIGHT side, use RU2.
 
    The cube should now look like this:
 
    ```
-   TOP    FRONT  LEFT   RIGHT  BACK   BOTTOM
+   TOP    FRONT  LEFT   BACK   RIGHT  BOTTOM
    . A .  . B .  . C .  . D .  . E .  F F F
    A A A  B B B  C C C  D D D  E E E  F F F
    . A .  B B B  C C C  D D D  E E E  F F F
@@ -110,7 +187,7 @@ The algorithms referred to in the steps are described below.
    RIGHT side of the cube at this point.
 
    ```
-   TOP    FRONT  LEFT   RIGHT  BACK   BOTTOM
+   TOP    FRONT  LEFT   BACK   RIGHT  BOTTOM
    . A .  . B .  . C .  . D .  . E .  F F F
    A A A  B B B  C C C  D D D  E E E  F F F
    . A .  B B B  C C C  D D D  E E E  F F F
@@ -127,7 +204,7 @@ The algorithms referred to in the steps are described below.
    The cube should now look like this:
 
    ```
-   TOP    FRONT  LEFT   RIGHT  BACK   BOTTOM
+   TOP    FRONT  LEFT   BACK   RIGHT  BOTTOM
    . A .  . B .  . C .  . D .  . E .  F F F
    A A A  B B B  C C C  D D D  E E E  F F F
    . A .  B B B  C C C  D D D  E E E  F F F
@@ -140,7 +217,7 @@ The algorithms referred to in the steps are described below.
    The cube should now look like this:
 
    ```
-   TOP    FRONT  LEFT   RIGHT  BACK   BOTTOM
+   TOP    FRONT  LEFT   BACK   RIGHT  BOTTOM
    A A A  B B B  C C C  D D D  E E E  F F F
    A A A  B B B  C C C  D D D  E E E  F F F
    A A A  B B B  C C C  D D D  E E E  F F F
@@ -155,7 +232,7 @@ General Notes
 
 * In the short forms below, "U" stands for "Upper", which would be "TOP" in the diagrams.
   Using "U" just injected a vowel in the acronyms, which made them somewhat pronouncable
-  and helped them stick in my brain when I was learning them.  :)  YMMV.
+  and helped them stick in my brain when I was learning them.  `:)`  YMMV.
 * CW  = clockwise
 * CCW = counter-clockwise
 * X  = Rotate side X 90' CW    (ex: R  == rotate the RIGHT side 90' CW)
@@ -172,7 +249,7 @@ General Notes
 ### Completing The Second Row
 
 There are three possible positions you can be in.  Note that you may need to rotate the
-BOTTOM side 90-180' in order to get to one of them.
+BOTTOM side 90-180' in order to get to one of them exactly.
 
 ```
 1. The piece that belongs in the FRONT-RIGHT-MIDDLE position is in the FRONT-BOTTOM-MIDDLE
@@ -201,7 +278,16 @@ A A A  B B B
 . . .  . . .
 ```
 
-#### Scenario 1
+No matter which position you start in, you will end up with this:
+
+```
+FRONT  RIGHT
+A A A  B B B
+. A A  B B .
+. . .  . . .
+```
+
+#### Starting From Position 1
 
 Short form: **B'R'BRBFB'F'**
 
@@ -217,7 +303,7 @@ Long form:
 1. Rotate FRONT 90' CCW
 
 
-#### Scenario 2
+#### Starting From Position 2
 
 Short form: **BLB'L'B'F'BF**
 
@@ -233,10 +319,10 @@ Long form:
 1. Rotate FRONT 90' CW
 
 
-#### Scenario 3
+#### Starting From Position 3
 
-Here you will move the piece such that you end up with Scenario 1 and then use that
-algorithm.
+Here you will move the piece such that you end up with Position 1 and then use that
+algorithm to move it to its final place.
 
 Short form: **R'BRBFB'F'BB**
 
