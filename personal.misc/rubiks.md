@@ -17,10 +17,10 @@ RIGHT, TOP, and BOTTOM being fairly self-explanatory from there.
 Key to the cube "diagrams" (if you'll excuse the exaggeration):
 <dl>
     <dt>X</dt>
-    <dd>(Any letter, that is.)  One specific color on the entire cube.  So for example an
-        &quot;A&quot; would be a particular color, and would be that same color across
-        sides in a particular diagram.  Unless otherwise noted, a specific letter probably
-        won't refer to the same color from diagram to diagram.</dd>
+    <dd>That is to say, any single letter.  One specific color on the entire cube.  So for
+        example an &quot;A&quot; would be a particular color, and would be that same color
+        across sides in a particular diagram.  Unless otherwise noted, a specific letter
+        probably won't refer to the same color from diagram to diagram.</dd>
     <dt>.</dt>
     <dd>Any color.  Basically, a placeholder to mark a spot whose color doesn't matter in
         the context of that diagram.</dd>
@@ -116,9 +116,9 @@ The algorithms referred to in the steps are described below.
 
    ```
    TOP    FRONT  LEFT   RIGHT  BACK   BOTTOM
-   A A A  B B B  C C C  D D D  E E E  . F .
+   . A .  . B .  . C .  . D .  . E .  F F F
    A A A  B B B  C C C  D D D  E E E  F F F
-   A A A  . B .  . C .  . D .  . E .  . F .
+   . A .  B B B  C C C  D D D  E E E  F F F
    ```
 
 1. Use RU2+LU2 to rotate the corners into their final correct orientations.
@@ -150,21 +150,10 @@ General Notes
 * X' = Rotatate side X 90' CCW (ex: R' == rotate the RIGHT side 90' CCW)
 * Individual pieces are designated by SIDE-EDGE-PLACE, so TOP-LEFT-MIDDLE is the piece
   located on the TOP side, on the LEFT edge of the side, in the MIDDLE position.
-  * **TODO** - Think through this - make it more rigorously defined.
+
+---
 
 ### FRU-RUF
-
-Used repeatedly to form the "plus".
-
-Creates this...
-
-```
-TOP
-. A .
-A A A
-. A .
-```
-
 
 Short form: **FRUR'U'F'**
 
@@ -178,7 +167,35 @@ Long form:
 1. Rotate FRONT 90' CCW
 
 
+Use repeatedly to form the "plus".
+
+Creates this...
+
+```
+TOP
+. A .
+A A A
+. A .
+```
+
+---
+
+
 ### LURU2
+
+Short form: **LU'R'UL'U'RU**
+
+Long form:
+
+1. Rotate LEFT 90' CW
+1. Rotate TOP 90' CCW
+1. Rotate RIGHT 90' CW
+1. Rotate TOP 90' CCW
+1. Rotate LEFT 90' CW
+1. Rotate TOP 90' CW
+1. Rotate RIGHT 90' CW
+1. Rotate TOP 90' CCW
+
 
 Rotates TOP-FRONT-LEFT, TOP-BACK-LEFT, and TOP-BACK-RIGHT one place CW.
 
@@ -202,21 +219,24 @@ Z . .
 
 Where X, Y, and Z refer to the same colors between those two diagrams.
 
-Short form: **LU'R'UL'U'RU**
-
-Long form:
-
-1. Rotate LEFT 90' CW
-1. Rotate TOP 90' CCW
-1. Rotate RIGHT 90' CW
-1. Rotate TOP 90' CCW
-1. Rotate LEFT 90' CW
-1. Rotate TOP 90' CW
-1. Rotate RIGHT 90' CW
-1. Rotate TOP 90' CCW
+---
 
 
 ### RU2
+
+Short form: **RUUR'U'RU'R'**
+
+Long form:
+
+1. Rotate RIGHT 90' CW
+1. Rotate TOP 90' CW
+1. Rotate TOP 90' CW
+1. Rotate RIGHT 90' CCW
+1. Rotate TOP 90' CCW
+1. Rotate RIGHT 90' CW
+1. Rotate TOP 90' CCW
+1. Rotate RIGHT 90' CCW
+
 
 Moves TOP-LEFT-MIDDLE, TOP-BACK-MIDDLE, and TOP-RIGHT-MIDDLE one place CCW on the TOP
 side.
@@ -246,21 +266,24 @@ TOP side).  Also preserves the positions/orientations of all pieces in the cube 
 those on the TOP side.  Other pieces on TOP are moved and/or rotated, but they don't
 matter in the contexts in which this algorithm is used.
 
-Short form: **RUUR'U'RU'R'**
-
-Long form:
-
-1. Rotate RIGHT 90' CW
-1. Rotate TOP 90' CW
-1. Rotate TOP 90' CW
-1. Rotate RIGHT 90' CCW
-1. Rotate TOP 90' CCW
-1. Rotate RIGHT 90' CW
-1. Rotate TOP 90' CCW
-1. Rotate RIGHT 90' CCW
+---
 
 
 ### LU2
+
+Short form: **L'U'U'LUL'UL**
+
+Long form:
+
+1. Rotate LEFT 90' CCW
+1. Rotate TOP 90' CCW
+1. Rotate TOP 90' CCW
+1. Rotate LEFT 90' CW
+1. Rotate TOP 90' CW
+1. Rotate LEFT 90' CCW
+1. Rotate TOP 90' CW
+1. Rotate LEFT 90' CW
+
 
 Moves TOP-LEFT-MIDDLE, TOP-BACK-MIDDLE, and TOP-RIGHT-MIDDLE one place CW on the TOP side
 
@@ -289,21 +312,13 @@ TOP side).  Also preserves the positions/orientations of all pieces in the cube 
 those on the TOP side.  Other pieces on TOP are moved and/or rotated, but they don't
 matter in the contexts in which this algorithm is used.
 
-Short form: **L'U'U'LUL'UL**
-
-Long form:
-
-1. Rotate LEFT 90' CCW
-1. Rotate TOP 90' CCW
-1. Rotate TOP 90' CCW
-1. Rotate LEFT 90' CW
-1. Rotate TOP 90' CW
-1. Rotate LEFT 90' CCW
-1. Rotate TOP 90' CW
-1. Rotate LEFT 90' CW
+---
 
 
 ### RU2+LU2
+
+Steps: Execute **RU2** and **LU2** consecutively (either order works).
+
 
 Rotates TOP-RIGHT-BACK 90' CW in-place, and TOP-RIGHT-FRONT 90' CCW in-place
 
@@ -329,5 +344,3 @@ TOP    FRONT  RIGHT  BACK
 A, B, C, X, Y, and Z all refer to the same colors between those two diagrams.
 
 Preserves EVERYTHING else on the whole cube except those two pieces.
-
-Steps: Execute **RU2** and **LU2** consecutively (either order works).
