@@ -58,7 +58,7 @@ and [Chili I](https://www.allrecipes.com/recipe/16276/chili-i/) from
   1. Pour in ALL other ingredients and spices, stirring to blend as you go.
   1. Cover, reduce heat, and simmer over low heat, stirring occasionally.
   1. After an hour or so, taste and adjust spices as necessary.
-  1. After simmering occasionally stirring for at least 2 hours, remove from heat and serve,
+  1. After simmering and occasionally stirring for at least 2 hours, remove from heat and serve,
      or refrigerate and serve the next day.
   1. To serve, ladle into bowls.
      1. Optional: Top with shredded cheddar cheese and/or sour cream.
