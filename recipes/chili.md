@@ -1,4 +1,4 @@
-# Italian Sausage Soup
+# Brian's Chili
 
 Based on a combination of
 [Boilermaker Tailgate Chili](https://www.allrecipes.com/recipe/78299/boilermaker-tailgate-chili/)
@@ -61,7 +61,7 @@ and [Chili I](https://www.allrecipes.com/recipe/16276/chili-i/) from
   1. After simmering occasionally stirring for at least 2 hours, remove from heat and serve,
      or refrigerate and serve the next day.
   1. To serve, ladle into bowls.
-    1. Optional: Top with shredded cheddar cheese and/or sour cream.
-    1. Optional: For Chili Mac, start with 1/3 bowl Kraft Macaroni and Cheese, and fill the
-       remaining 2/3 bowl with chili.
+     1. Optional: Top with shredded cheddar cheese and/or sour cream.
+     1. Optional: For Chili Mac, start with 1/3 bowl Kraft Macaroni and Cheese, and fill the
+        remaining 2/3 bowl with chili.
 
